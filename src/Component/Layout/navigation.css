@@ -1,0 +1,36 @@
+
+ @media only screen and (min-width: 960px){
+.naviblue{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    width: 70vh;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    margin-left: 36rem;
+}
+
+    
+
+.navigreen{
+    display: flex;
+    align-items: center;
+}
+
+.navigreen a{
+    text-decoration: none;
+    color: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    font-size: 1.1rem;
+    margin-right: 2rem;
+    padding: 6px 16px;
+    border-radius: 5px;
+}
+
+.navigreen a:hover {
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+}
+}
+
+.naviblue{
+    list-style: none;
+}

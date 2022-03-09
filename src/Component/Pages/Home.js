@@ -3,7 +3,7 @@ import picture from '../../Assets/pic.jpeg'
 import { Button, Container } from 'react-bootstrap'
 import"./home.css";
 import { Link } from 'react-router-dom';
-
+import Resume from "../../Assets/Deepan Chakravarthy Resume.pdf"
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <div className="row py-4 my-5">
         <img
           style={{borderRadius:"20px"}}
-          alt="home"
+          alt="Home"
           className='col-md-3 col-sm-10 py-5 my-5 bg-secondary'
           src={picture}
         />
@@ -28,6 +28,13 @@ export default function Home() {
                 <br /> 
                 I AM AN COMFORTABLE FULL STACK DEVELOPER WHO WORKS WITH BOTH FRONTEND AND BACKEND APPLICATION. 
               </p>
+              <div>
+                <Button  onClick={()=>{
+                  window.open(Resume)
+                }}>
+                  RESUME
+                </Button>
+              </div>
               <br/>
               <div>
                 <Link to="/contact">

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { useNavigate } from 'react-router';
-import Logo from '../../Assets/tdc2.png';
+
+
 
 
 export default function Navigation() {
-  const navigate = useNavigate();
+  
   return (
     <>
     <Navbar collapseOnSelect fixed='top' expand='sm' bg='black' variant='dark'>

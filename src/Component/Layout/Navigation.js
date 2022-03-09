@@ -1,11 +1,12 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap';
-
-
+import { useNavigate } from 'react-router';
+import Logo from '../../Assets/tdc2.png';
+import { NavLink } from 'react-router-dom';
 
 
 export default function Navigation() {
-  
+  const navigate = useNavigate();
   return (
     <>
     <Navbar collapseOnSelect fixed='top' expand='sm' bg='black' variant='dark'>
@@ -14,11 +15,11 @@ export default function Navigation() {
        <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
        <Navbar.Collapse id='responsive-navbar-nav'>
        <Nav className="me-auto">
-           <Nav.Link href="/">HOME</Nav.Link>
-           <Nav.Link href="/contact">CONTACT</Nav.Link>
-           <Nav.Link href="/project">PROJECT</Nav.Link>
-           <Nav.Link href="/qualification">QUALIFICATION</Nav.Link>
-           <Nav.Link href="/service">SERVICE</Nav.Link>
+           <NavLink to="/">HOME</NavLink>
+           <NavLink to="/contact">CONTACT</NavLink>
+           <NavLink to="/project">PROJECT</NavLink>
+           <NavLink to="/qualification">QUALIFICATION</NavLink>
+           <NavLink to="/service">SERVICE</NavLink>
          </Nav>
       </Navbar.Collapse>
      </Container>       

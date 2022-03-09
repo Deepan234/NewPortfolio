@@ -1,0 +1,16 @@
+.home-text {
+    font-size: larger;
+  }
+
+  [data-bs-toggle="collapse"].collapsed .if-not-collapsed {
+    display: none;
+  }
+
+  [data-bs-toggle="collapse"]:not(.collapsed) .if-collapsed {
+    display: none;
+  }
+
+  .home-color{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  }
